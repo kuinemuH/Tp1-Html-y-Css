@@ -17,7 +17,6 @@ a{
 
 }
 
-/* esto significa que a las "a" que son sus hijos le de ese margen */
 nav > a {
     margin-left: 3rem;
 }
