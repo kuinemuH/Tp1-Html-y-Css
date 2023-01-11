@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none; /*SACAMOS LAS LINEAS DE ABAJO DE LAS ETIQUETAS "A"*/
+}
+
+header{
+        width: 100%; /*OCUPA EL 100% DEL ANCHO DE PANTALLA*/
+        position: fixed; /*SI HACEMOS SCROLL EN LA PAGINA, EL HEADER SIEMPRE QUEDA ARRIBA VISIBLE*/
+        top: 0;
+        background: #fff;
+    }
+
+.conteiner__header{
+    max-width: 1000px; /*ANCHO MAXIMO QUE SE OCUPA DEL NAVEGADOR*/
+    margin: auto; /*MARGENES*/
+    display: flex; 
+    align-items: center; /*TODO EL CONTENIDO DEL HEADER ESTARA ALINEADO AL CENTRO*/
+    justify-content: space-between; /*NOS SEPARA EL CONTENIDO PERO RESPETANDO POSICION DEL CENTRO*/
+    padding: 10px; /*CANTIDAD DE ESPACIO ENTRE EL HEADER Y LA BARRA DE NAVEGACION*/
+}
+
+.logo__header{
+    width: 15%;/*VA A OCUPAR SOLO UN 15% DEL ANCHO TOTAL DEL HEADER*/
+    height: 100%;
+    display:flex;
+    align-items: center;
+}
+
+.menu__header{
+    width: 100%;
+    height: 100%;
+    display:flex;
+    align-items: center;
+    justify-content:space-around; /*ITEMS SE ALINEAN CON UN ESPACIO PERFECTO ENTRE AMBOS*/
+    font-weight: bold; /*PONE LAS LETRAS EN ESTILO "NEGRITA"*/
+}
+
+.iconos__header{
+    width: 27%;
+    height: 100%;
+    display:flex;
+    align-items: center;
+    justify-content:space-between; /*EL NAVEGADOR DISTRIBUYE EL ESPACIO ENTRE Y AL REDEDOR DE LOS ITEMS*/
+    font-weight: bold; /*PONE LAS LETRAS EN ESTILO "NEGRITA"*/
+}
+
+nav > a {
+    margin-left: 15px; /*SE DA SEPARACION ENTRE CADA "A"*/
+}
+
+a:hover{
+    background-color: #5b60ef; /*COLOR DEL FONDO AL HACER HOVER*/
+    color: #fff; /*COLOR DE LA LETRA AL HACER EL HOVER*/
+    border-radius: 7px; /*CUAN REDONDEADO ES EL BORDE DEL BOTON*/
+    padding: 7px; /*CUAN GRANDE VA A SER EL BORDE DE COLOR QUE APARZCA EN EL BOTON*/
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5) /*AGREGA EL EFECTO SOMBRA EN EL HOVER*/
+}
